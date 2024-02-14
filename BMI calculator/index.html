@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Body Mass Index Calculator</h1>
+    </header>
+    <main>
+        <section class="main">
+            <form>
+                <label for="height">Height in cm:</label>
+                <input type="text" id="heightInput" name="height" placeholder="Enter height here" required>
+            
+                <label for="weight">Weight in kg:</label>
+                <input type="text" id="weightInput" name="weight" placeholder="Enter weight here" required>
+            
+                <p id="result"></p>
+                <button type="button" id="calculate">Calculate</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+        <section class="info">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">BMI</th>
+                        <th scope="col">Category</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>less than 18.5</td>
+                        <td>Underweight</td>
+                    </tr>
+                    <tr>
+                        <td>between 18.5 and 24.9</td>
+                        <td>Ideal</td>
+                    </tr>
+                    <tr>
+                        <td>between 25 and 29.9</td>
+                        <td>Overweight</td>
+                    </tr>
+                    <tr>
+                        <td>over 30 </td>
+                        <td>Obesity</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 BMI Calculator
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
